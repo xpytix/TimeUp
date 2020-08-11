@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    font-size: 15px;
+    font-family: "Poppins" ,sans-serif;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    padding-top: 100px;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    color: white;
+
+}
+
+.main-element {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 98%;
+    width: 98%;
+    margin: auto;
+    align-self: center;
+    background: black;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1.2em;
+}
+h1{
+    margin-top: 70px;
+    font-size: 3em;
+    color: white;
+}
+a{
+
+    color: #c3f526;
+}
+p1{
+    margin: 60px 40px;
+}
+p2{
+    margin-top: 200px;
+    color: #c3f526;
+}
+.border {
+    position: absolute;
+    display: block;
+    top: -50%;
+    left: -50%;
+    z-index: -9;
+    height: 200%;
+    width: 200%;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    background: linear-gradient(to right, #000000 20%, #000000 40%, #ff3d6a 50%, #9145ff 55%, #000000 70%, #000000 100%);
+    background-size: 200% auto;
+
+    animation: shine 3s linear infinite;
+}
+
+/*Begin shimmer code*/
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+/*  -------  NAV ----------- */
+#nav-stoper{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#nav-minutnik{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+ }
+#nav-learn-app{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/*  -------  BUTTON NAV  ----------- */
+.button-stoper{
+
+
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: #9145ff;
+    border: none;
+    font-size: 7em;
+}
+.button-stoper:hover
+{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+
+
+}
+.button-minutnik{
+
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: #ff3d6a;
+    border: none;
+
+    font-size: 7em;
+}
+.button-minutnik:hover{
+    color: white;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+.button-learnapp{
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #c3f526;
+    border: none;
+
+    font-size: 7em;
+}
+.button-learnapp:hover{
+    color: white;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* STOPER */
+#stoper{
+
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    border: solid 5px #9145ff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.time-stoper{
+    color: #9145ff;
+    margin-bottom: 10%;
+}
+.btn-stoper button{
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color: #9145ff;
+    border-radius: 30px;
+    color: black;
+    font-size: 1.2em;
+    margin: 10px;
+}
+.btn-stoper button:hover{
+    border: 1px solid #9145ff;
+    background-color: black;
+    color: #9145ff;
+
+}
+#res{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5em;
+
+}
+
+/* MINUTNIK */
+#minutnik{
+
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    border: solid 5px #ff3d6a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.time-minutnik{
+    color: #ff3d6a;
+    font-size: 2em;
+    font-family: digital-7 ,'Press Start 2P', cursive;
+    margin: 5%;
+}
+.btn-minutnik button{
+    width: 100px;
+    height: 45px;
+    border: none;
+    background-color:#ff3d6a;
+    border-radius: 30px;
+    color: black;
+    font-size: 1.2em;
+    margin-left: 10px;
+
+}
+.btn-minutnik button:hover{
+    border: 1px solid #ff3d6a;
+    background-color: black;
+    color: #ff3d6a;
+
+
+}
+.form-control {
+    border: none;
+    box-shadow: none;
+    padding: 10px 12px;
+    color: #ff3d6a;
+    background-color: black;
+    font-size: 1em;
+
+}
+.countdown{
+    color: white;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* LEARN APP */
+#learnApp{
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    border: solid 5px #c3f526;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.time-learnApp{
+    color: #c3f526;
+    font-size: 24px;
+    margin-bottom: 5%;
+    font-family: 'Press Start 2P', cursive;
+}
+.btn-learnApp button{
+    width: 120px;
+    height: 60px;
+    border: none;
+    background-color:#c3f526;
+    border-radius: 30px;
+    color: black;
+    font-size: 1.2em;
+    margin: 10px;
+    font-family: "Press Start 2P", sans-serif;
+}
+.btn-learnApp button:hover{
+    border: 1px solid #c3f526;
+    background-color: black;
+    color: #c3f526;
+
+
+}
+.type{
+    padding-bottom: 10%;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+.type button{
+    width: 150px;
+    height: 60px;
+    border: none;
+    background-color:black;
+    border-bottom: 5px dotted #c3f526;
+    color: white;
+    font-size: 1.3em;
+    margin-right: 1.5em;
+    font-family: "Press Start 2P", sans-serif;
+
+}
+.type button:hover{
+    animation-name: loading;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes loading {
+    0%{
+        border-bottom: 5px dotted #c3f526;
+        color: white;
+    }
+    25%{
+        border-bottom: 5px dotted #dcef94;
+        color: #dcef94;
+    }
+    50%{
+        border-bottom: 5px dotted white;
+        color: #c3f526;
+
+    }
+    75%{
+        border-bottom: 5px dotted #dcef94;
+        color: #dcef94;
+
+    }
+    100%{
+        border-bottom: 5px dotted #c3f526;
+        color: white;
+    }
+
+}
