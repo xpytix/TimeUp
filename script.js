@@ -238,7 +238,7 @@ function addLearnApp() {
                     case 25:
                         alert("TIME TO BREAK");
                         break;
-                    case 1:
+                    case 5:
                         alert("TIME TO STUDY");
                         break;
                     case 10:
@@ -276,7 +276,7 @@ function addLearnApp() {
 
     function five() {
         timeDisplay.innerHTML= '5:00'
-        min = 1;
+        min = 5;
         return min;
     }
 
