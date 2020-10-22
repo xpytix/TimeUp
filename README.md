@@ -1,4 +1,5 @@
-# TimeUp
+# TimeUp - vanila js
+
 
 TIMER/STOPWATCH/POMODORO 
 
